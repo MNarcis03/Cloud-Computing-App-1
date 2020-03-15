@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "401fc952-2efe-4f86-9fb3-f8e4cfc21035",
+		"name": "How-To",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Racers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add Racer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Cosmin\", \"age\":20, \"category\":\"F1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET The New Added Racer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Cosmin\", \"age\":20, \"category\":\"F1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers?name=Cosmin&category=F1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cosmin"
+						},
+						{
+							"key": "category",
+							"value": "F1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update The New Added Racer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\":40}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers?name=Cosmin&category=F1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cosmin"
+						},
+						{
+							"key": "category",
+							"value": "F1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET The Update of The New Added Racer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\":40}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers?name=Cosmin&category=F1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cosmin"
+						},
+						{
+							"key": "category",
+							"value": "F1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE The New Added Racer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers?name=Cosmin&age=40&category=F1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cosmin"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "category",
+							"value": "F1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Check if The New Added Racer is Deleted",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3030/racers?name=Cosmin&age=40&category=F1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3030",
+					"path": [
+						"racers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cosmin"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "category",
+							"value": "F1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
